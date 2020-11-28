@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  font-family: "Merriweatger Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.top {
+  display: flex;
+  justify-content: center;
+  font-size: 3.6rem;
+  background-color: #44597e;
+}
+h2 {
+  background-color: #44597e;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+#csvFileInput {
+  padding: 5rem;
+  background-color: rgb(108, 108, 108);
+  border: 0.8rem solid black;
+  border-radius: 1.4rem;
+  font-size: 2.4rem;
+  display: flex;
+  vertical-align: middle;
+}
+#map {
+  width: 100vw;
+  height: 60vh;
+  border: 1.4rem solid black;
+}
+
+.fileDrop {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  font-size: 3.6rem;
+}
+.data {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.stats {
+  display: flex;
+  text-align: left;
+}
+.line {
+  text-align: left;
+}

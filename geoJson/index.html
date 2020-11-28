@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="robots" content="index,follow" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Document</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<script src="scratch.js" defer></script>
+<link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div class="top">
+        <h2>Logbook Plotter</h2>
+    </div>
+    <div class="container">
+        <div id='map'></div>
+        <div class="fileDrop">
+            <h4>Upload your ForeFlight Logbook as a CSV</h4>
+            <p style="font-size: 1.8rem;">Drag and Drop or hit choose file to upload</p>
+            <br>
+            <p style="font-size: 1.8rem;">Once the file name appears in the box below double click the map</p>
+            <input type="file" id="csvFileInput" onchange="get(this.files)" accept=".csv">
+            <div class="data">
+                <h3>Data</h3>
+                <table class="stats">
+                    <tr>
+                        <h4 class="line">Number of Flights</h4>
+                    </tr>
+                    <tr>
+                        <h4 class="line">Number of Airports</h4>
+                        <div id="num_flights"></div>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <script>
+
+
+    </script>
+
+</body>
+
+</html>
